@@ -1,6 +1,6 @@
 {
-  "name": "My Plugin Repository",
-  "description": "Custom Jellyfin plugin repository",
+  "name": "Mwhax7's Plugins Repo",
+  "description": "Simple Jellyfin plugin repository",
   "version": "1",
   "packages": [
     {
