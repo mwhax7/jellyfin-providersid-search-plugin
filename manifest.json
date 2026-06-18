@@ -1,21 +1,25 @@
-[
+{
+  "name": "My Plugin Repository",
+  "description": "Custom Jellyfin plugin repository",
+  "version": "1",
+  "packages": [
     {
-    "category": "General",
-    "guid": "35e94cd5-63be-4fad-98a7-b4b9bf0471fe",
-    "name": "Providers ID Items Search API",
-    "description": "Companion plugin to Stremio Jellyfin integration. Exposes new endpoint to lookup media items based on IMDB IDs.",
-    "owner": "mwhax7",
-    "overview": "Companion Stremio Jellyfin plugin",
-    "versions":
-        [
-            {
-                "checksum": "58917ea620e96eae4ecd6613a58a4e936f2c0a0eca4316b8b2fa8c04f0293276",
-                "changelog": "This release updates the plugin for compatibility with Jellyfin 10.11+ and .NET 9 runtime.",
-                "targetAbi": "10.11.0.0",
-                "sourceUrl": "https://github.com/mwhax7/jellyfin-providersid-search-plugin/releases/download/1.1.0.0/ProvidersIdSearch_1.1.0.0.zip",
-                "timestamp": "2026-06-19 00:10:38",
-                "version": "1.1.0.0"
-            }
-        ]
+      "guid": "35e94cd5-63be-4fad-98a7-b4b9bf0471fe",
+      "name": "Providers ID Items Search API",
+      "overview": "Stremio-Jellyfin companion plugin",
+      "description": "Exposes endpoint to search items by provider IDs (IMDb etc.)",
+      "owner": "mwhax7",
+      "category": "General",
+      "versions": [
+        {
+          "version": "1.1.0.0",
+          "changelog": "Updated for Jellyfin 10.11+ and .NET 9 compatibility",
+          "targetAbi": "10.11.0.0",
+          "sourceUrl": "https://github.com/mwhax7/jellyfin-providersid-search-plugin/releases/download/1.1.0.0/ProvidersIdSearch_1.1.0.0.zip",
+          "checksum": "58917ea620e96eae4ecd6613a58a4e936f2c0a0eca4316b8b2fa8c04f0293276",
+          "timestamp": "2026-06-19T00:10:38Z"
+        }
+      ]
     }
-]
+  ]
+}
