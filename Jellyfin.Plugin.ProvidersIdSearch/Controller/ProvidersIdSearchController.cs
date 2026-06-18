@@ -1,4 +1,3 @@
-
 using System.Net.Mime;
 using MediaBrowser.Controller.Dto;
 using MediaBrowser.Controller.Entities;
@@ -18,7 +17,6 @@ namespace Jellyfin.Plugin.ProvidersIdSearch.Controller;
 [Produces(MediaTypeNames.Application.Json)]
 public class ProvidersIdSearchController : ControllerBase
 {
-
     private readonly ILibraryManager libraryManager;
     private readonly IDtoService dtoService;
 
@@ -34,9 +32,15 @@ public class ProvidersIdSearchController : ControllerBase
         [FromQuery] string ProviderId
     )
     {
-        List<BaseItem> items = libraryManager.GetItemList(
-            new InternalItemsQuery() { HasAnyProviderId = new Dictionary<string, string> { { nameof(Imdb), ProviderId } } }
-            );
+        var items = libraryManager.GetItemList(
+            new InternalItemsQuery()
+            {
+                HasAnyProviderId = new Dictionary<string, string>
+                {
+                    { nameof(Imdb), ProviderId }
+                }
+            }
+        );
 
         return Ok(dtoService.GetBaseItemDtos(items, new DtoOptions()));
     }
